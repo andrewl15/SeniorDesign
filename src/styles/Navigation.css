@@ -1,0 +1,43 @@
+.NavigationBar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background-color: #004f8f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.NavigationBar li {
+  margin: 0 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.NavigationBar li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.NavigationBar li.active::before, .NavigationBar li:hover::before {
+  width: 100%;
+}
+
+.NavigationBar li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  padding: 10px;
+}

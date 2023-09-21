@@ -1,0 +1,226 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #e7e5e5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #e7e5e5;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.App-header {
+  background-color: #e7e5e5;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 46px; /* Added margin-top to move the header down */
+}
+
+.App-header h1 {
+  margin: 0;
+}
+
+.App-header button {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.App-header button:hover {
+  background-color: #282c34;
+  color: #fff;
+}
+
+
+.instructions-accordion{
+  width: 250px;
+  margin: 0 auto; 
+  float: left;
+}
+
+.geneNotFoundAlert{
+  width: 300px;
+  margin: 0 auto;
+  padding-left: 300 px;
+  font-size: 14px;
+}
+.geneName{
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline; 
+}
+
+.tablescroll{
+  overflow-x: auto;
+}
+
+.uploadFile{
+  padding-right: 1250px;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.container {
+  padding: 20px;
+  border: 2px solid #aeadad;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #bfbfbf;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.searchbox-plotDropDown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchbox,
+.plotDropDown {
+  margin: 10px;
+  padding: 10px;
+  vertical-align: middle;
+  outline: none !important;
+}
+
+.listButtons {
+  display: inline-block;
+  background-color: #004f8f;
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  outline: none !important; /* remove button outline when clicked */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.listButtons:hover {
+  background-color: #006e8d;
+  cursor: pointer;
+}
+
+.listButtons:active {
+  background-color: #004f8f;
+  box-shadow: 0px 0px 5px #888;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 10px #ddd;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-right: 0;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.select-dropdown {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.searchbox input[type="textbox"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchbox input[type="textbox"]::placeholder {
+  color: #aaa;
+}
+
+.plotDropDown select {
+  height: 36px;
+  border-radius: 5px;
+}
+
+.searchbox {
+  max-width: 300px;
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
