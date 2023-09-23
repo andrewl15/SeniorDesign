@@ -1,5 +1,6 @@
 {
-  "homepage": "/cisc498-22f/team-15/team15",
+  "homepage": "",
+  "main": "src/index.tsx",
   "name": "team15",
   "version": "0.1.0",
   "private": true,
